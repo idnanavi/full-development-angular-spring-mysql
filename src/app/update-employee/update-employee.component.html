@@ -1,0 +1,24 @@
+<h3>Click here to Update  Employee</h3>
+
+<form (ngSubmit)="onUpdate(employee.id)">
+    <div class="form-group">
+        <label for="ids">Id</label>
+        <input type="text" class="form-control" id="updateid" required [(ngModel)]="employee.id" name="ids">
+      </div>
+    <div class="form-group">
+      <label for="frontname">First Name</label>
+      <input type="text" class="form-control" id="updatefname" required [(ngModel)]="employee.fname" name="frontname">
+    </div>
+
+    <div class="form-group">
+      <label for="backname">Last Name</label>
+      <input type="text" class="form-control" id="updatelname" required [(ngModel)]="employee.lname" name="backname">
+    </div>
+
+    <div class="form-group">
+      <label for="emailuser">First Name</label>
+      <input type="text" class="form-control" id="updateemail" required [(ngModel)]="employee.email" name="emailuser">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
